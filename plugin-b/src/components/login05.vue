@@ -13,6 +13,7 @@ import meuBody0 from './body/body0.vue'
 import meuTabs from './body/tabs.vue'
 import meucreat from './body/creat.vue'
 import meushow from './body/show.vue'
+import meudialog from './body/dialog.vue'
 
 
  export default {
@@ -28,7 +29,8 @@ import meushow from './body/show.vue'
      meuBody0,
      meuTabs,
      meucreat,
-     meushow
+     meushow,
+     meudialog
    }
  }
 
@@ -52,6 +54,8 @@ import meushow from './body/show.vue'
     <!--<meucreat />-->
 
     <meushow />
+
+    <!--<meudialog />-->
 
   </div>
 </template>

@@ -125,42 +125,69 @@ form {
 
 /* Form Show */
 
-/* label em cima, valor em baixo em linha */
-.show-collum > div.el-row > div {
-  min-height: 34px;
-}
-/* label em cima, valor em baixo em linha */
-
 /* label + valor em linha */
-.show-inline > div.el-row > div  {
+.show-inline {
   display: inline-flex !important;
   min-height: 34px;
 }
-.show-inline > div.el-row > div > strong {
+.show-inline > strong {
   margin-right: 5px !important;
 }
 /* label + valor em linha */
 
 /* label + valor em colunas */
-.show-inline-grid > .el-row > div > div{
+.show-inline-grid {
   display: inline-flex;
   min-width: 100%;
   min-height: 34px;
   padding: 0 10px;
 
 }
-.show-inline-grid > .el-row > div > div > strong{
+.show-inline-grid > strong{
   margin-right: 10px;
 }
 /* label + valor em colunas */
 
 /* label em cima, valor em baixo em colunas */
-.show-collum-grid > .el-row > div > div {
+.show-collum-grid {
   min-width: 100%;
   min-height: 36px;
   padding: 0 10px;
 }
 /* label em cima, valor em baixo em colunas */
+.show-inline2 {
+  display: inline-flex !important;
+  min-height: 34px;
+  width: 100%;
+}
+.show-label-bold {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.show-label{
+  margin-bottom: 0;
+}
+.show-value {
+  padding-left: 10px;
+}
+.text-aling-and {
+  text-align: end;
+}
+.show-label-bold-colum {
+  font-weight: bold;
+  display: inline-block;
+}
+.show-label-colum {
+  display: inline-block;
+}
+.show-label-colum ~ div {
+  padding-left: 10px;
+  display: inline-block;
+}
+.show-label-bold-colum ~ div {
+  padding-left: 10px;
+  display: inline-block;
+}
 
 /* Form Show */
 /* body */
