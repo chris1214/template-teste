@@ -2,7 +2,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
-import elementNifty from './assets/element.nifty.css'
+import elementNifty from './assets/element-override.css'
 Vue.use(elementNifty);
 
 import temaElement from './temaB'

@@ -8,8 +8,15 @@ import {meuComponent, meuBotao} from 'plugin-a'
 Vue.component("meuComponent", meuComponent);
 Vue.component("meuBotao", meuBotao);
 
-import {componentB} from 'plugin-b'
-Vue.component("componentB", componentB);
+import { meuAside, meuHeader, body, detailsShow, input, mySwitch, temaB, Example } from 'plugin-b'
+Vue.component("meuAside", meuAside);
+Vue.component("meuHeader", meuHeader);
+Vue.component("meuHeader", body);
+Vue.component("meuHeader", detailsShow);
+Vue.component("meuHeader", input);
+Vue.component("meuHeader", mySwitch);
+Vue.component("meuHeader", Example);
+Vue.use(temaB);
 
 Vue.config.productionTip = false
 

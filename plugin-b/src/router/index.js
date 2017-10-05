@@ -1,16 +1,16 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Hello from '@/components/Hello'
-import example from '../components/Example.vue'
-import login01 from '../components/login01.vue'
-import login01Scroll from '../components/login01-scroll.vue'
-import login02 from '../components/login02.vue'
-import login02Scroll from '../components/login02-scroll.vue'
-import login03 from '../components/login03.vue'
-import login03Scroll from '../components/login03-scroll.vue'
-import login04 from '../components/login04.vue'
-import login05 from '../components/login05.vue'
-import aside from '../components/header/aside.vue'
+import Hello from '@/example/Hello'
+import example from '../example/Example.vue'
+import login01 from '../example/login/login01.vue'
+import login01Scroll from '../example/login/login01-scroll.vue'
+import login02 from '../example/login/login02.vue'
+import login02Scroll from '../example/login/login02-scroll.vue'
+import login03 from '../example/login/login03.vue'
+import login03Scroll from '../example/login/login03-scroll.vue'
+import login04 from '../example/login/login04.vue'
+import templateDefalt from '../example/templateDefalt.vue'
+import aside from '../components/aside.vue'
 
 Vue.use(Router)
 
@@ -62,9 +62,9 @@ export default new Router({
       component: login04
     },
     {
-      path: '/login05',
-      name: 'login05',
-      component: login05
+      path: '/templateDefalt',
+      name: 'templateDefalt',
+      component: templateDefalt
     },
     {
       path: '/aside',

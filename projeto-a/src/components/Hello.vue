@@ -1,10 +1,7 @@
 <template>
   <div>
-    <meuComponent />
-    <br>
-    <componentB />
-    <br>
-    <meuBotao />
+    <meuAside></meuAside>
+    <meuHeader></meuHeader>
   </div>
 </template>
 

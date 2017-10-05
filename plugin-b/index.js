@@ -1,10 +1,17 @@
 /**
  * Created by christopher on 12/09/17.
  */
-import temaB from './src/temaB'
-import componentB from './src/components/meuComponent.vue'
-import Example from './src/components/Example.vue'
+import Example from './src/example/Example.vue'
 
-export {
-  componentB,Example
+import temaB from './src/temaB'
+import meuAside from './src/components/aside.vue'
+import meuHeader from './src/components/header.vue'
+import body from './src/components/body.vue'
+import detailsShow from './src/components/detailsShow.vue'
+import input from './src/components/input.vue'
+import mySwitch from './src/components/switch.vue'
+
+
+export  {
+  meuAside, meuHeader, body, detailsShow, input, mySwitch, temaB, Example
 }
