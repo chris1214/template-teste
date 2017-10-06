@@ -1,17 +1,24 @@
 <template>
   <div>
-    <meuAside></meuAside>
-    <meuHeader></meuHeader>
+
+    <meuAside/>
+
+    <meuHeader/>
+
+    <meuBody>
+
+      <h2 slot="title">Usúario</h2>
+
+      <!--<bodyList />-->
+
+      <!--<meuTabs />-->
+
+      <!--<meucreat/>-->
+
+      <!-- <meushow /> -->
+
+      <!--<meudialog />-->
+
+    </meuBody>
   </div>
 </template>
-
-<script>
-export default {
-  data () {
-    return {
-    }
-  },
-  components: {
-  }
-}
-</script>
