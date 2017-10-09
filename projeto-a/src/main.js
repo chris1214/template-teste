@@ -4,19 +4,22 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
-import {meuComponent, meuBotao} from 'plugin-a'
-Vue.component("meuComponent", meuComponent);
-Vue.component("meuBotao", meuBotao);
+import pluginA from 'plugin-a'
+// Vue.component("meuComponent", meuComponent);
+// Vue.component("meuBotao", meuBotao);
 
-import { meuAside, meuHeader, body, detailsShow, input, mySwitch, temaB, Example } from 'plugin-b'
+import { meuAside, meuHeader, meuBody, detailsShow, meuInput, mySwitch, Example, } from 'plugin-b'
 Vue.component("meuAside", meuAside);
 Vue.component("meuHeader", meuHeader);
-Vue.component("meuHeader", body);
-Vue.component("meuHeader", detailsShow);
-Vue.component("meuHeader", input);
-Vue.component("meuHeader", mySwitch);
-Vue.component("meuHeader", Example);
-Vue.use(temaB);
+Vue.component("meuBody", meuBody);
+Vue.component("detailsShow", detailsShow);
+Vue.component("meuInput", meuInput);
+Vue.component("mySwitch", mySwitch);
+Vue.component("Example", Example);
+
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+Vue.use(ElementUI);
 
 Vue.config.productionTip = false
 

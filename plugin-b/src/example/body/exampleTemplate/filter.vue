@@ -106,7 +106,4 @@
   </el-row>
 </template>
 <style>
-  .el-select .el-input .el-input__icon {
-    top: 0 !important;
-  }
 </style>

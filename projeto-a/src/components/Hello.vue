@@ -1,15 +1,12 @@
 <template>
   <div>
-
     <meuAside/>
 
-    <meuHeader/>
+    <meuHeader></meuHeader>
 
     <meuBody>
-
       <h2 slot="title">Usúario</h2>
-
-      <!--<bodyList />-->
+      <Example/>
 
       <!--<meuTabs />-->
 
@@ -18,7 +15,6 @@
       <!-- <meushow /> -->
 
       <!--<meudialog />-->
-
     </meuBody>
   </div>
 </template>
