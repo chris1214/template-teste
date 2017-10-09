@@ -89,7 +89,7 @@
     </div>
 </template>
 
-<style>
+<style scoped>
 /* table */
 
 /*.el-table th {
