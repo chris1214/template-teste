@@ -1,5 +1,9 @@
 <script>
+  import myAside from "./aside"
   export default {
+  components: {
+    myAside
+  },
     data() {
       return {
         isCollapse: true
@@ -23,6 +27,7 @@
     <el-container>
 
 
+<!--
       <el-aside width="65px" class="min-width-65" v-bind:class="{containerLogo: !isCollapse}">
         <div class="logo">
           <el-row>
@@ -70,7 +75,8 @@
         </el-menu>
 
       </el-aside>
-
+-->
+      <myAside src="../assets/img/logo.png" textLogo="Nifty"/>
       <el-container class="meuContainer">
         <el-header class="meuMargin">
           <el-row>
@@ -142,6 +148,93 @@
 </template>
 <style>
 
+html {
+    min-height: 100%;
+    max-height: 100%;
+    height: 100%;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+}
+body {
+    min-height: 100%;
+    max-height: 100%;
+    height: 100%;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+}
+#app {
+    min-height: 100%;
+    max-height: 100%;
+    height: 100%;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+}
+#app > div {
+    min-height: 100%;
+    max-height: 100%;
+    height: 100%;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+}
+.el-container {
+    min-height: 100%;
+    max-height: 100%;
+    height: 100%;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.el-header {
+  line-height: 55px;
+  background-color: #B3C0D1;
+  color: #333;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: 56px !important;
+  z-index: 5;
+  padding: 0 0 0 120px;
+}
+.el-footer {
+  background-color: #B3C0D1;
+  color: #333;
+  z-index: 2;
+}
+.el-footer {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: 60px;
+  min-height: 60px;
+  max-height: 60px;
+}
+
+.el-main {
+  background-color: #E9EEF3;
+  padding: 65px 20px 20px;
+  z-index: 1;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  margin-bottom: 0px;
+  overflow: inherit;
+}
+
+body > .el-container {
+  margin-bottom: 40px;
+  min-height: 100%;
+  height: 100%;
+}
+
+
+/*
 .min-width-65 {
   min-width: 65px !important;
   width: 65px !important;
@@ -230,80 +323,12 @@
     max-height: 100%;
     z-index: 6;
 }
-html {
-    min-height: 100%;
-    max-height: 100%;
-    height: 100%;
-    width: 100%;
-    min-width: 100%;
-    max-width: 100%;
-}
-body {
-    min-height: 100%;
-    max-height: 100%;
-    height: 100%;
-    width: 100%;
-    min-width: 100%;
-    max-width: 100%;
-}
-#app {
-    min-height: 100%;
-    max-height: 100%;
-    height: 100%;
-    width: 100%;
-    min-width: 100%;
-    max-width: 100%;
-}
-#app > div {
-    min-height: 100%;
-    max-height: 100%;
-    height: 100%;
-    width: 100%;
-    min-width: 100%;
-    max-width: 100%;
-}
-.el-container {
-    min-height: 100%;
-    max-height: 100%;
-    height: 100%;
-    width: 100%;
-    min-width: 100%;
-    max-width: 100%;
-}
 .el-menu-vertical:not(.el-menu--collapse) {
   width: 200px;
   min-height: 100%;
   height: 100%;
   border-right: none;
 }
-
-.el-header {
-  line-height: 55px;
-  background-color: #B3C0D1;
-  color: #333;
-  position: fixed;
-  top: 0px;
-  width: 100%;
-  min-width: 100%;
-  max-width: 100%;
-  height: 56px !important;
-  z-index: 5;
-  padding: 0 0 0 120px;
-}
-.el-footer {
-  background-color: #B3C0D1;
-  color: #333;
-  z-index: 2;
-}
-.el-footer {
-  width: 100%;
-  min-width: 100%;
-  max-width: 100%;
-  height: 60px;
-  min-height: 60px;
-  max-height: 60px;
-}
-
 .el-aside {
   height: 100%;
   min-height: 100%;
@@ -312,26 +337,7 @@ body {
   z-index: 10;
   overflow: inherit;
 }
-
-.el-main {
-  background-color: #E9EEF3;
-  padding: 65px 20px 20px;
-  z-index: 1;
-  width: 100%;
-  min-width: 100%;
-  max-width: 100%;
-  margin-bottom: 0px;
-  overflow: inherit;
-}
-
-body > .el-container {
-  margin-bottom: 40px;
-  min-height: 100%;
-  height: 100%;
-}
-
-
-
+*/
 
 
 
