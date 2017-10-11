@@ -1,5 +1,3 @@
-
-
 <script>
 import meuBody from '../components/body.vue'
 import meuAside from '../components/aside.vue'
@@ -28,6 +26,7 @@ import meudialog from './body/dialog.vue'
      meudialog
    }
  }
+
 </script>
 
 <template>
@@ -41,16 +40,15 @@ import meudialog from './body/dialog.vue'
     <meuBody>
 
       <h2 slot="title">Usúario</h2>
+        <bodyList/>
 
-      <bodyList />
+        <!--<meuTabs />-->
 
-      <!--<meuTabs />-->
+        <!--<meucreat/>-->
 
-      <!--<meucreat/>-->
+        <!--<meushow />-->
 
-      <!--<meushow />-->
-
-      <!--<meudialog />-->
+        <!--<meudialog />-->
 
     </meuBody>
   </div>

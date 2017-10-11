@@ -64,24 +64,3 @@ export default {
 
   </div>
 </template>
-<style>
-
-.corpo {
-  margin-left: 65px;
-  z-index: -1;
-}
-
-.conteudo {
-  padding: 70px 15px 0px 10px;
-}
-.el-dialog__header {
-  border-bottom: 1px solid #E9ECEE !important;
-  padding: 20px 20px !important;
-}
-.el-dialog__footer {
-  border-top: 1px solid #E9ECEE !important;
-  background-color: #E9ECEE;
-}
-
-
-</style>

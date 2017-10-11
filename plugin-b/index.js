@@ -2,7 +2,6 @@
  * Created by christopher on 12/09/17.
  */
 import Example from './src/example/body/bodyList.vue'
-import override from './src/assets/element-override.css'
 
 import temaElement from './src/temaB'
 import meuAside from './src/components/aside.vue'
@@ -14,5 +13,5 @@ import mySwitch from './src/components/switch.vue'
 
 
 export  {
-  meuAside, meuHeader, meuBody, detailsShow, meuInput, mySwitch, temaElement, Example, override
+  meuAside, meuHeader, meuBody, detailsShow, meuInput, mySwitch, temaElement, Example
 }

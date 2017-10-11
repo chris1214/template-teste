@@ -21,110 +21,113 @@
      }
    }
  }
+
 </script>
 
 <template>
-  <div class="aside">
+  <div>
+    <div class="aside">
 
-    <div class="logo">
-      <el-row>
-        <el-col :span="22" class="" v-bind:class="{containerLogo: !isCollapse}">
-          <el-row>
-            <el-col :span="5" class="container-brand-icon">
-              <img src="../assets/img/logo.png" alt="Nifty Logo" class="brand-icon" @click="isCollapse = !isCollapse">
-            </el-col>
-            <el-col :span="9" style="text-align: center;">
-              <span class="brand-text" v-bind:class="{brandTextColor: !isCollapse}">Nifty</span>
-            </el-col>
-          </el-row>
-        </el-col>
-
-        <el-col :span="2" class="botao">
-          <el-button @click="isCollapse = !isCollapse" class="transform-i borderNone">|||</el-button>
-        </el-col>
-      </el-row>
-    </div>
-
-    <div class="leftMenu">
-      <el-menu theme="dark" default-active="2" class="el-menu-vertical" @open="handleOpen" @close="handleClose"
-               :collapse="isCollapse">
-
-        <el-menu-item index="2" class="perfil" v-show="!isCollapse">
-          <template>
+      <div class="logo">
+        <el-row>
+          <el-col :span="22" class="" v-bind:class="{containerLogo: !isCollapse}">
             <el-row>
-              <el-col :span="24" class="corpo-img">
-                <img src="../assets/img/menina-camera.jpg" alt="Nifty Logo" class="class100 border-radius50" rounded="circle"/>
+              <el-col :span="5" class="container-brand-icon">
+                <img src="../assets/img/logo.png" alt="Nifty Logo" class="brand-icon" @click="isCollapse = !isCollapse">
+              </el-col>
+              <el-col :span="9" style="text-align: center;">
+                <span class="brand-text" v-bind:class="{brandTextColor: !isCollapse}">Nifty</span>
               </el-col>
             </el-row>
+          </el-col>
 
-            <el-row>
-              <el-col :span="24" class="height-60px">
-                <p class="mnp-name">Aaron Chavez</p>
-                <span class="mnp-desc">aaron.cha@themeon.net</span>
-              </el-col>
-            </el-row>
+          <el-col :span="2" class="botao">
+            <el-button @click="isCollapse = !isCollapse" class="transform-i borderNone">|||</el-button>
+          </el-col>
+        </el-row>
+      </div>
 
-            <el-row slot="title">
-              <el-col :span="24">
-                <a href="#">
-                  <el-button type="text" icon="el-icon-edit" size="mini"></el-button>
-                </a>
-                <a href="#">
-                  <el-button type="text" icon="el-icon-share" size="mini"></el-button>
-                </a>
+      <div class="leftMenu">
+        <el-menu theme="dark" default-active="2" class="el-menu-vertical" @open="handleOpen" @close="handleClose"
+                 :collapse="isCollapse">
 
-                <el-dropdown>
+          <el-menu-item index="2" class="perfil" v-show="!isCollapse">
+            <template>
+              <el-row>
+                <el-col :span="24" class="corpo-img">
+                  <img src="../assets/img/menina-camera.jpg" alt="Nifty Logo" class="class100 border-radius50"
+                       rounded="circle"/>
+                </el-col>
+              </el-row>
+
+              <el-row>
+                <el-col :span="24" class="height-60px">
+                  <p class="mnp-name">Aaron Chavez</p>
+                  <span class="mnp-desc">aaron.cha@themeon.net</span>
+                </el-col>
+              </el-row>
+
+              <el-row slot="title">
+                <el-col :span="24">
+                  <a href="#">
+                    <el-button type="text" icon="el-icon-edit" size="mini"></el-button>
+                  </a>
+                  <a href="#">
+                    <el-button type="text" icon="el-icon-share" size="mini"></el-button>
+                  </a>
+
+                  <el-dropdown>
                     <span class="el-dropdown-link">
                       <el-button type="text" icon="el-icon-more" size="mini" class="transform-i"></el-button>
                     </span>
-                  <el-dropdown-menu slot="dropdown">
-                    <el-dropdown-item>Action 1</el-dropdown-item>
-                    <el-dropdown-item>Action 2</el-dropdown-item>
-                    <el-dropdown-item>Action 3</el-dropdown-item>
-                    <el-dropdown-item disabled>Action 4</el-dropdown-item>
-                    <el-dropdown-item divided>Action 5</el-dropdown-item>
-                  </el-dropdown-menu>
-                </el-dropdown>
+                    <el-dropdown-menu slot="dropdown">
+                      <el-dropdown-item>Action 1</el-dropdown-item>
+                      <el-dropdown-item>Action 2</el-dropdown-item>
+                      <el-dropdown-item>Action 3</el-dropdown-item>
+                      <el-dropdown-item disabled>Action 4</el-dropdown-item>
+                      <el-dropdown-item divided>Action 5</el-dropdown-item>
+                    </el-dropdown-menu>
+                  </el-dropdown>
 
-              </el-col>
-            </el-row>
-          </template>
-        </el-menu-item>
+                </el-col>
+              </el-row>
+            </template>
+          </el-menu-item>
 
-        <el-submenu index="3">
-          <template slot="title">
-            <i class="el-icon-message"></i>
-            <span slot="title">Navigator One</span>
-          </template>
-          <el-menu-item-group>
-            <span slot="title">Group One</span>
-            <el-menu-item index="2-1">item one</el-menu-item>
-            <el-menu-item index="2-2">item two</el-menu-item>
-          </el-menu-item-group>
-          <el-menu-item-group title="Group Two">
-            <el-menu-item index="2-3">item three</el-menu-item>
-          </el-menu-item-group>
-          <el-submenu index="2-4">
-            <span slot="title">item four</span>
-            <el-menu-item index="2-4-1">item one</el-menu-item>
+          <el-submenu index="3">
+            <template slot="title">
+              <i class="el-icon-message"></i>
+              <span slot="title">Navigator One</span>
+            </template>
+            <el-menu-item-group>
+              <span slot="title">Group One</span>
+              <el-menu-item index="2-1">item one</el-menu-item>
+              <el-menu-item index="2-2">item two</el-menu-item>
+            </el-menu-item-group>
+            <el-menu-item-group title="Group Two">
+              <el-menu-item index="2-3">item three</el-menu-item>
+            </el-menu-item-group>
+            <el-submenu index="2-4">
+              <span slot="title">item four</span>
+              <el-menu-item index="2-4-1">item one</el-menu-item>
+            </el-submenu>
           </el-submenu>
-        </el-submenu>
 
-        <el-menu-item index="4">
-          <i class="el-icon-menu"></i>
-          <span slot="title">Navigator Two</span>
-        </el-menu-item>
+          <el-menu-item index="4">
+            <i class="el-icon-menu"></i>
+            <span slot="title">Navigator Two</span>
+          </el-menu-item>
 
-        <el-menu-item index="5">
-          <i class="el-icon-setting"></i>
-          <span slot="title">Navigator Three</span>
-        </el-menu-item>
-      </el-menu>
+          <el-menu-item index="5">
+            <i class="el-icon-setting"></i>
+            <span slot="title">Navigator Three</span>
+          </el-menu-item>
+        </el-menu>
+      </div>
+
     </div>
-
   </div>
 </template>
-
 
 <style>
 /* logo */
@@ -326,7 +329,5 @@ img {
 
 
 
+
 </style>
-
-
-

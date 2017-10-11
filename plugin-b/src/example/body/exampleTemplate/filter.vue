@@ -27,59 +27,60 @@
         }
 
     }
+
+
+
+
+
 </script>
 
 <template>
-  <el-row>
+  <el-row :gutter="20">
     <el-col :span="24">
       <el-collapse>
         <el-collapse-item title="Filtros">
+            <el-form label-position="top">
+              <el-row :gutter="20">
+                <el-col :xs="8" :sm="8" :md="8" :lg="8">
+                  <meuInput label="Nome" placeholder="placeholder 123"/>
+                </el-col>
 
-          <el-form label-position="top">
-            <div class="row">
+                <el-col :xs="8" :sm="8" :md="8" :lg="8">
+                  <el-form-item label="Select">
+                    <el-select v-model="value" placeholder="Select">
+                      <el-option
+                        v-for="item in options"
+                        :key="item.value"
+                        :label="item.label"
+                        :value="item.value">
+                      </el-option>
+                    </el-select>
+                  </el-form-item>
 
-              <div class="col-xs-12 col-sm-6 col-md-4">
-                <meuInput label="Nome" placeholder="placeholder 123"/>
-              </div>
+                </el-col>
 
-              <div class="col-xs-12 col-sm-6 col-md-4">
-                <el-form-item label="Select">
-                  <el-select v-model="value" placeholder="Select">
-                    <el-option
-                      v-for="item in options"
-                      :key="item.value"
-                      :label="item.label"
-                      :value="item.value">
-                    </el-option>
-                  </el-select>
-                </el-form-item>
+                <el-col :xs="8" :sm="8" :md="8" :lg="8">
+                  <meuInput label="Email" placeholder="Email"/>
+                </el-col>
+              </el-row>
 
-              </div>
+              <el-row :gutter="20">
 
-              <div class="col-xs-12 col-sm-6 col-md-4">
-                <meuInput label="Email" placeholder="Email"/>
-              </div>
+                <el-col :span="8">
+                  <meuInput placeholder="Telefone"/>
+                </el-col>
 
-            </div>
+                <el-col :span="8">
+                  <meuInput placeholder="Senha"/>
+                </el-col>
 
-            <div class="row">
+                <el-col :span="8">
+                  <meuInput placeholder="Repita a Senha"/>
+                </el-col>
 
-              <div class="col-xs-12 col-sm-6 col-md-4">
-                <meuInput placeholder="Telefone"/>
-              </div>
+              </el-row>
 
-              <div class="col-xs-12 col-sm-6 col-md-4">
-                <meuInput placeholder="Senha"/>
-              </div>
-
-              <div class="col-xs-12 col-sm-6 col-md-4">
-                <meuInput placeholder="Repita a Senha"/>
-              </div>
-
-            </div>
-
-          </el-form>
-
+            </el-form>
           <el-row :gutter="10">
             <el-col :span="24">
               <div class="el-button-group">

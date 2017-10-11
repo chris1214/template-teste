@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Hello from '@/example/Hello'
-import example from '../example/Example.vue'
 import login01 from '../example/login/login01.vue'
 import login01Scroll from '../example/login/login01-scroll.vue'
 import login02 from '../example/login/login02.vue'
@@ -20,11 +19,6 @@ export default new Router({
       path: '/',
       name: 'Hello',
       component: Hello
-    },
-    {
-      path: '/example',
-      name: 'example',
-      component: example
     },
     {
       path: '/login01',

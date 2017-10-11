@@ -7,10 +7,9 @@
 </script>
 <template>
   <div>
-    <el-form-item :label="label">
+    <label>{{ label }} </label>
       <el-input
         :placeholder="placeholder"
       />
-    </el-form-item>
   </div>
 </template>

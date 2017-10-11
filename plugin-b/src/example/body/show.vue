@@ -669,7 +669,7 @@ export default {
   </div>
 </template>
 
-<style>
+<!--<style>
 /* Form Show */
 
 /* label + valor em linha */
@@ -740,5 +740,5 @@ export default {
 
 
 
-</style>
+</style>-->
 
