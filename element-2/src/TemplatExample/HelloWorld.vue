@@ -1,8 +1,10 @@
 <script>
-  import myAside from "./aside"
+  import myAside from "../components/aside"
+  import myTable from "./exampleTemplate"
   export default {
   components: {
-    myAside
+    myAside,
+    myTable
   },
     data() {
       return {
@@ -91,52 +93,7 @@
         </el-header>
 
         <el-main>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam, commodi deserunt doloribus eaque,
-            fuga fugit harum hic id ipsum iste labore maxime nam nisi odio pariatur rem repellendus voluptate?</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam, commodi deserunt doloribus eaque,
-            fuga fugit harum hic id ipsum iste labore maxime nam nisi odio pariatur rem repellendus voluptate?</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam, commodi deserunt doloribus eaque,
-            fuga fugit harum hic id ipsum iste labore maxime nam nisi odio pariatur rem repellendus voluptate?</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam, commodi deserunt doloribus eaque,
-            fuga fugit harum hic id ipsum iste labore maxime nam nisi odio pariatur rem repellendus voluptate?</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam, commodi deserunt doloribus eaque,
-            fuga fugit harum hic id ipsum iste labore maxime nam nisi odio pariatur rem repellendus voluptate?</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam, commodi deserunt doloribus eaque,
-            fuga fugit harum hic id ipsum iste labore maxime nam nisi odio pariatur rem repellendus voluptate?</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam, commodi deserunt doloribus eaque,
-            fuga fugit harum hic id ipsum iste labore maxime nam nisi odio pariatur rem repellendus voluptate?</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam, commodi deserunt doloribus eaque,
-            fuga fugit harum hic id ipsum iste labore maxime nam nisi odio pariatur rem repellendus voluptate?</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam, commodi deserunt doloribus eaque,
-            fuga fugit harum hic id ipsum iste labore maxime nam nisi odio pariatur rem repellendus voluptate?</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam, commodi deserunt doloribus eaque,
-            fuga fugit harum hic id ipsum iste labore maxime nam nisi odio pariatur rem repellendus voluptate?</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam, commodi deserunt doloribus eaque,
-            fuga fugit harum hic id ipsum iste labore maxime nam nisi odio pariatur rem repellendus voluptate?</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam, commodi deserunt doloribus eaque,
-            fuga fugit harum hic id ipsum iste labore maxime nam nisi odio pariatur rem repellendus voluptate?</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam, commodi deserunt doloribus eaque,
-            fuga fugit harum hic id ipsum iste labore maxime nam nisi odio pariatur rem repellendus voluptate?</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam, commodi deserunt doloribus eaque,
-            fuga fugit harum hic id ipsum iste labore maxime nam nisi odio pariatur rem repellendus voluptate?</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam, commodi deserunt doloribus eaque,
-            fuga fugit harum hic id ipsum iste labore maxime nam nisi odio pariatur rem repellendus voluptate?</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam, commodi deserunt doloribus eaque,
-            fuga fugit harum hic id ipsum iste labore maxime nam nisi odio pariatur rem repellendus voluptate?</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam, commodi deserunt doloribus eaque,
-            fuga fugit harum hic id ipsum iste labore maxime nam nisi odio pariatur rem repellendus voluptate?</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam, commodi deserunt doloribus eaque,
-            fuga fugit harum hic id ipsum iste labore maxime nam nisi odio pariatur rem repellendus voluptate?</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam, commodi deserunt doloribus eaque,
-            fuga fugit harum hic id ipsum iste labore maxime nam nisi odio pariatur rem repellendus voluptate?</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam, commodi deserunt doloribus eaque,
-            fuga fugit harum hic id ipsum iste labore maxime nam nisi odio pariatur rem repellendus voluptate?</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam, commodi deserunt doloribus eaque,
-            fuga fugit harum hic id ipsum iste labore maxime nam nisi odio pariatur rem repellendus voluptate?</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam, commodi deserunt doloribus eaque,
-            fuga fugit harum hic id ipsum iste labore maxime nam nisi odio pariatur rem repellendus voluptate?</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam, commodi deserunt doloribus eaque,
-            fuga fugit harum hic id ipsum iste labore maxime nam nisi odio pariatur rem repellendus voluptate?</p>
+          <myTable />
         </el-main>
         <el-footer>Footer</el-footer>
       </el-container>
@@ -342,4 +299,3 @@ body > .el-container {
 
 
 </style>
-
