@@ -40,11 +40,11 @@ import meudialog from './body/dialog.vue'
     <meuBody>
 
       <h2 slot="title">Usúario</h2>
-        <bodyList/>
+        <!--<bodyList/>-->
 
         <!--<meuTabs />-->
 
-        <!--<meucreat/>-->
+        <meucreat/>
 
         <!--<meushow />-->
 
