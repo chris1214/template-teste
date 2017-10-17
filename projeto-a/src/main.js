@@ -4,9 +4,12 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
-import pluginA from 'plugin-a'
+// import pluginA from 'plugin-a'
 // Vue.component("meuComponent", meuComponent);
 // Vue.component("meuBotao", meuBotao);
+
+import {asideElement2} from 'element-2'
+Vue.component("asideElement2", asideElement2);
 
 import { meuAside, meuHeader, meuBody, detailsShow, meuInput, mySwitch, Example, } from 'plugin-b'
 Vue.component("meuAside", meuAside);

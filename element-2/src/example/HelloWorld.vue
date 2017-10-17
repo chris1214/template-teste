@@ -29,33 +29,85 @@
 
 
 
+
+
 </script>
 <template>
   <div>
     <el-container>
 
 
-      <mayAside src="./logo.png" textLogo="Nifty"/>
+      <mayAside src="./logo.png" title="Nifty" name="aside"/>
 
       <el-container class="meuContainer">
 
         <el-header>
           <el-row>
-            <el-col :span="6"><a href="#">Link 1</a></el-col>
-            <el-col :span="6"><a href="#">Link 2</a></el-col>
-            <el-col :span="6"><a href="#">Link 3</a></el-col>
-            <el-col :span="3"><a href="#">Link 4</a></el-col>
+            <el-col :span="22">
+              <el-menu mode="horizontal">
+                <el-menu-item index="2">
+                  <span slot="title">Navigator Two</span>
+                </el-menu-item>
+                <el-menu-item index="3">
+                  <span slot="title">Navigator Three</span>
+                </el-menu-item>
+                <el-submenu index="4">
+                  <template slot="title">
+                    <span slot="title">Navigator One</span>
+                  </template>
+                  <el-menu-item-group>
+                    <span slot="title">Group One</span>
+                    <el-menu-item index="4-1">item one</el-menu-item>
+                    <el-menu-item index="4-2">item two</el-menu-item>
+                  </el-menu-item-group>
+                  <el-menu-item-group title="Group Two">
+                    <el-menu-item index="4-3">item three</el-menu-item>
+                  </el-menu-item-group>
+                  <el-submenu index="4-4">
+                    <span slot="title">item four</span>
+                    <el-menu-item index="4-4-1">item one</el-menu-item>
+                  </el-submenu>
+                </el-submenu>
+                <el-menu-item index="5">
+                  <span slot="title">Navigator Two</span>
+                </el-menu-item>
+                <el-menu-item index="6">
+                  <span slot="title">Navigator Three</span>
+                </el-menu-item>
+              </el-menu>
+            </el-col>
+
+            <el-col :span="2">
+              <el-menu mode="horizontal">
+                <el-menu-item index="1">
+                  <span slot="title">
+                    <el-dropdown>
+                      <span class="el-dropdown-link">
+                        <el-button type="text" icon="el-icon-more" size="mini" class="transform-i"></el-button>
+                      </span>
+                    <el-dropdown-menu slot="dropdown">
+                    <el-dropdown-item>Action 1</el-dropdown-item>
+                    <el-dropdown-item>Action 2</el-dropdown-item>
+                    <el-dropdown-item>Action 3</el-dropdown-item>
+                  </el-dropdown-menu>
+                   </el-dropdown>
+                  </span>
+                </el-menu-item>
+              </el-menu>
+            </el-col>
+
           </el-row>
+
         </el-header>
 
         <el-main>
-          <mayFilter />
+          <mayFilter/>
           <br><br>
-          <mayTable />
+          <mayTable/>
           <br><br>
-          <mayCreat />
+          <mayCreat/>
           <br><br>
-          <mayTabs />
+          <mayTabs/>
         </el-main>
         <el-footer>Footer</el-footer>
       </el-container>
@@ -72,7 +124,7 @@
     max-width: 100%;
     padding-left: 64px;
   }
-html {
+html, body, #app, .el-container, #app > div {
     min-height: 100%;
     max-height: 100%;
     height: 100%;
@@ -80,58 +132,25 @@ html {
     min-width: 100%;
     max-width: 100%;
 }
-body {
-    min-height: 100%;
-    max-height: 100%;
-    height: 100%;
-    width: 100%;
-    min-width: 100%;
-    max-width: 100%;
+.el-header > .el-menu{
+  background-color: #fff;
 }
-#app {
-    min-height: 100%;
-    max-height: 100%;
-    height: 100%;
-    width: 100%;
-    min-width: 100%;
-    max-width: 100%;
-}
-#app > div {
-    min-height: 100%;
-    max-height: 100%;
-    height: 100%;
-    width: 100%;
-    min-width: 100%;
-    max-width: 100%;
-}
-.el-container {
-    min-height: 100%;
-    max-height: 100%;
-    height: 100%;
-    width: 100%;
-    min-width: 100%;
-    max-width: 100%;
-}
-
 .el-header {
   line-height: 55px;
-  background-color: #B3C0D1;
+  background-color: #fff;
   color: #333;
   position: fixed;
   top: 0px;
   width: 100%;
   min-width: 100%;
   max-width: 100%;
-  height: 56px !important;
   z-index: 5;
-  padding: 0 0 0 150px;
+  padding: 0 85px 0 150px;
 }
 .el-footer {
   background-color: #B3C0D1;
   color: #333;
   z-index: 2;
-}
-.el-footer {
   width: 100%;
   min-width: 100%;
   max-width: 100%;
@@ -150,10 +169,12 @@ body {
   margin-bottom: 0px;
   overflow: inherit;
 }
-
 body > .el-container {
   margin-bottom: 40px;
   min-height: 100%;
   height: 100%;
 }
+
+
+
 </style>
