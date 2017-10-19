@@ -55,59 +55,28 @@
           </el-col>
         </el-row>
 
-        <el-row id="profileIcon">
+        <el-row>
           <el-col :span="24">
-            <el-row>
-              <el-col :span="3">
                 <el-tooltip class="item" effect="dark" content="Action 1" placement="top-start">
                   <a href="#">
                     <el-button type="text" icon="el-icon-edit" size="mini"></el-button>
                   </a>
                 </el-tooltip>
-              </el-col>
-              <el-col :span="3">
                 <el-tooltip class="item" effect="dark" content="Action 2" placement="top-start">
                   <a href="#">
                     <el-button type="text" icon="el-icon-share" size="mini"></el-button>
                   </a>
                 </el-tooltip>
-              </el-col>
-              <el-col :span="3">
                 <el-tooltip class="item" effect="dark" content="Action 3" placement="top-start">
                   <a href="#">
                     <el-button type="text" icon="el-icon-arrow-down" size="mini"></el-button>
                   </a>
                 </el-tooltip>
-              </el-col>
-              <el-col :span="3">
-                <el-tooltip class="item" effect="dark" content="Action 4" placement="top-start">
-                  <a href="#">
-                    <el-button type="text" icon="el-icon-arrow-left" size="mini"></el-button>
-                  </a>
-                </el-tooltip>
-              </el-col>
-              <el-col :span="3">
                 <el-tooltip class="item" effect="dark" content="Action 5" placement="top-start">
                   <a href="#">
                     <el-button type="text" icon="el-icon-arrow-right" size="mini"></el-button>
                   </a>
                 </el-tooltip>
-              </el-col>
-              <el-col :span="3">
-                <el-tooltip class="item" effect="dark" content="Action 6" placement="top-start">
-                  <a href="#">
-                    <el-button type="text" icon="el-icon-arrow-up" size="mini"></el-button>
-                  </a>
-                </el-tooltip>
-              </el-col>
-              <el-col :span="3">
-                <el-tooltip class="item" effect="dark" content="Action 7" placement="top-start">
-                  <a href="#">
-                    <el-button type="text" icon="el-icon-circle-close" size="mini"></el-button>
-                  </a>
-                </el-tooltip>
-              </el-col>
-              <el-col :span="3">
                 <el-dropdown>
                     <span class="el-dropdown-link">
                       <el-button type="text" icon="el-icon-more" size="mini" class="transform-i"></el-button>
@@ -118,8 +87,6 @@
                     <el-dropdown-item>Action 10</el-dropdown-item>
                   </el-dropdown-menu>
                 </el-dropdown>
-              </el-col>
-            </el-row>
           </el-col>
         </el-row>
       </div>
@@ -175,8 +142,8 @@
   </div>
 </template>
 <style>
-#profileIcon {
-  padding: 0 30px;
+#profileIcon .el-tooltip {
+  padding: 0 5px;
 }
 .transform-i {
   transform: rotate(90deg);
