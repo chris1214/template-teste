@@ -1,5 +1,6 @@
 <script>
   import mayAside from "../components/aside"
+  import mayContainer from "../components/container"
   import mayTable from "./body/exampleTemplate/table"
   import mayFilter from "./body/exampleTemplate/filter"
   import mayCreat from "./body/creat"
@@ -10,7 +11,8 @@
     mayTable,
     mayFilter,
     mayCreat,
-    mayTabs
+    mayTabs,
+    mayContainer
   },
     data() {
       return {
@@ -197,57 +199,62 @@
                 </el-header>
 
                 <el-main>
+                  <mayContainer>
                     <el-row>
-                        <el-col :span="12">
-                            <h1>Title</h1>
-                        </el-col>
-                        <el-col :span="12" class="text-align-end padding-11">
-                            <el-button size="medium">Medium</el-button>
-                        </el-col>
+                      <el-col :span="12">
+                        <h1>Title</h1>
+                      </el-col>
+                      <el-col :span="12" class="text-align-end padding-11">
+                        <el-button size="medium">Medium</el-button>
+                      </el-col>
                     </el-row>
+                  </mayContainer>
 
+                  <mayContainer>
                     <el-collapse v-model="activeName" accordion>
-                        <el-collapse-item title="Filtros" name="1">
-                            <el-row :gutter="20">
-                                <el-col :span="12">
-                                    <label>Nome </label>
-                                    <el-input
-                                    />
-                                </el-col>
-                                <el-col :span="12">
-                                    <label>Sobrenome</label>
-                                    <el-input
-                                    />
-                                </el-col>
-                            </el-row>
+                      <el-collapse-item title="Filtros" name="1">
+                        <el-row :gutter="20">
+                          <el-col :span="12">
+                            <label>Nome </label>
+                            <el-input
+                            />
+                          </el-col>
+                          <el-col :span="12">
+                            <label>Sobrenome</label>
+                            <el-input
+                            />
+                          </el-col>
+                        </el-row>
 
-                            <el-row :gutter="20">
-                                <el-col :span="12">
-                                    <el-button size="medium" type="warning">pesquisar</el-button>
-                                </el-col>
-                            </el-row>
-                        </el-collapse-item>
+                        <el-row :gutter="20">
+                          <el-col :span="12">
+                            <el-button size="medium" type="warning">pesquisar</el-button>
+                          </el-col>
+                        </el-row>
+                      </el-collapse-item>
                     </el-collapse>
+                  </mayContainer>
 
+                  <mayContainer>
                     <el-table
-                            :data="tableData"
-                            style="width: 100%">
-                        <el-table-column
-                                prop="date"
-                                label="Date"
-                                width="180">
-                        </el-table-column>
-                        <el-table-column
-                                prop="name"
-                                label="Name"
-                                width="180">
-                        </el-table-column>
-                        <el-table-column
-                                prop="address"
-                                label="Address">
-                        </el-table-column>
+                      :data="tableData"
+                      style="width: 100%">
+                      <el-table-column
+                        prop="date"
+                        label="Date"
+                        width="180">
+                      </el-table-column>
+                      <el-table-column
+                        prop="name"
+                        label="Name"
+                        width="180">
+                      </el-table-column>
+                      <el-table-column
+                        prop="address"
+                        label="Address">
+                      </el-table-column>
                     </el-table>
-
+                  </mayContainer>
 
                 </el-main>
                 <el-footer>Footer</el-footer>
