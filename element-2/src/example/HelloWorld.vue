@@ -43,14 +43,6 @@
       }
     }
   }
-
-
-
-
-
-
-
-
 </script>
 <template>
     <div>
@@ -140,36 +132,67 @@
                                 </el-submenu>
                             </el-menu>
                         </el-col>
-                        <el-col :xs="6" :sm="6" :md="6" :lg="6" class="text-align-end">
-                            <el-dropdown trigger="click">
+                      <el-col :xs="6" :sm="6" :md="6" :lg="6" class="text-align-end">
+                        <el-dropdown trigger="click">
                                  <span class="el-dropdown-link">
                       <i class="el-icon-more transform-i"></i>
                     </span>
-                                <el-dropdown-menu slot="dropdown">
-                                    <div class="display-3">
-                                        <el-dropdown-item>
-                                            <span>Navigator Two</span>
-                                        </el-dropdown-item>
-                                        <el-dropdown-item>
-                                            <span>Navigator Three</span>
-                                        </el-dropdown-item>
-                                        <el-dropdown-item>
-                                            <span>Navigator One</span>
-                                        </el-dropdown-item>
-                                    </div>
+                          <el-dropdown-menu slot="dropdown">
+                            <div class="display-3">
+                              <el-dropdown-item>
+                                <span>Navigator Two</span>
+                              </el-dropdown-item>
+                              <el-dropdown-item>
+                                <span>Navigator Three</span>
+                              </el-dropdown-item>
+                              <el-dropdown-item>
+                                <span>Navigator One</span>
+                              </el-dropdown-item>
+                            </div>
 
-                                    <el-dropdown-item>
-                                        <a href="#">Texto sem icone</a>
-                                    </el-dropdown-item>
-                                    <el-dropdown-item>
-                                        <a href="#"><i class="el-icon-edit"></i>Texto com icone</a>
-                                    </el-dropdown-item>
+                            <el-dropdown-item>
+                              <a href="#">Texto sem icone</a>
+                            </el-dropdown-item>
+                            <el-dropdown-item>
+                              <a href="#"><i class="el-icon-edit"></i>Texto com icone</a>
+                            </el-dropdown-item>
 
-                                </el-dropdown-menu>
-                            </el-dropdown>
-                        </el-col>
-
+                          </el-dropdown-menu>
+                        </el-dropdown>
+                      </el-col>
                     </el-row>
+
+                  <el-row class="display-3">
+                    <el-col :xs="24" :sm="24" :md="24" :lg="24" class="text-align-end">
+                      <el-dropdown trigger="click">
+                                 <span class="el-dropdown-link">
+                      <i class="el-icon-more transform-i"></i>
+                    </span>
+                        <el-dropdown-menu slot="dropdown">
+                          <div class="display-3">
+                            <el-dropdown-item>
+                              <span>Navigator Two</span>
+                            </el-dropdown-item>
+                            <el-dropdown-item>
+                              <span>Navigator Three</span>
+                            </el-dropdown-item>
+                            <el-dropdown-item>
+                              <span>Navigator One</span>
+                            </el-dropdown-item>
+                          </div>
+
+                          <el-dropdown-item>
+                            <a href="#">Texto sem icone</a>
+                          </el-dropdown-item>
+                          <el-dropdown-item>
+                            <a href="#"><i class="el-icon-edit"></i>Texto com icone</a>
+                          </el-dropdown-item>
+
+                        </el-dropdown-menu>
+                      </el-dropdown>
+                    </el-col>
+                  </el-row>
+
 
                 </el-header>
 
@@ -239,6 +262,8 @@
 @media (min-width: 349px){
   .display-2 {
     display: none !important;
+  }.display-1 {
+    display: none !important;
   }
   @media (min-width: 800px){
     .display-3 {
@@ -247,12 +272,12 @@
   }
 }
 @media (min-width: 800px){
-  .display-2 {
-    display: none !important;
-  }
   .display-3 {
     display: none !important;
   }
+  .display-1 {
+      display: block !important;
+    }
   @media (min-width: 1065px){
     .display-1 {
       display: block !important;
