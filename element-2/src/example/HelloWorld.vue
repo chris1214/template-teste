@@ -1,5 +1,6 @@
 <script>
   import mayAside from "../components/aside"
+  import mayHeader from "../components/header"
   import mayContainer from "../components/container"
   import mayTable from "./body/exampleTemplate/table"
   import mayFilter from "./body/exampleTemplate/filter"
@@ -12,7 +13,8 @@
     mayFilter,
     mayCreat,
     mayTabs,
-    mayContainer
+    mayContainer,
+    mayHeader
   },
     data() {
       return {
@@ -55,6 +57,7 @@
 
             <el-container class="meuContainer">
 
+<!--
                 <el-header>
                     <el-row class="display-2">
                         <el-col :xs="12" :sm="12" :md="12" :lg="12">
@@ -197,6 +200,9 @@
 
 
                 </el-header>
+-->
+              <mayHeader linkRight1="Navigator Two" linkRight2="Navigator Three" linkRight3="Navigator One"
+                         linkLeft1="Navigator Two" linkLeft2="Navigator Three" linkLeft3="Navigator One"></mayHeader>
 
                 <el-main>
                   <mayContainer>
@@ -266,41 +272,6 @@
 
 </template>
 <style>
-@media (min-width: 349px){
-  .display-2 {
-    display: none !important;
-  }.display-1 {
-    display: none !important;
-  }
-  @media (min-width: 800px){
-    .display-3 {
-      display: block !important;
-    }
-  }
-}
-@media (min-width: 800px){
-  .display-3 {
-    display: none !important;
-  }
-  .display-1 {
-      display: block !important;
-    }
-  @media (min-width: 1065px){
-    .display-1 {
-      display: block !important;
-    }
-  }
-}
-@media (min-width: 1065px){
-  .display-2 {
-    display: block !important;
-  }
-  @media (min-width: 349px){
-    .display-1 {
-      display: none !important;
-    }
-  }
-}
 .padding-11{
   padding: 11px 0;
 }

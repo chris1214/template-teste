@@ -1,7 +1,7 @@
 <template>
   <div>
-    <meuAside/>
-    <!--<asideElement2 title="Nifty"/>-->
+    <!--<meuAside/>-->
+    <asideElement2 title="Nifty"/>
 
     <meuHeader></meuHeader>
 
