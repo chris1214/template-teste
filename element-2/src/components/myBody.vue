@@ -22,10 +22,6 @@
 .myContainer {
   padding-left: 64px;
 }
-.myContainer {
-  padding-left: 64px;
-}
-
 html, body, #app, .el-container, #app > div {
     min-height: 100%;
     max-height: 100%;
