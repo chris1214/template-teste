@@ -5,18 +5,19 @@ import App from './App'
 import router from './router'
 
 // import pluginA from 'plugin-a'
-// Vue.component("meuComponent", meuComponent);
-// Vue.component("meuBotao", meuBotao);
+// Vue.component("myComponent", myComponent);
+// Vue.component("myBotao", myBotao);
 
-import {asideElement2} from 'element-2'
+import {asideElement2, myHeader} from 'element-2'
 Vue.component("asideElement2", asideElement2);
+Vue.component("myHeader", myHeader);
 
-import { meuAside, meuHeader, meuBody, detailsShow, meuInput, mySwitch, Example, } from 'plugin-b'
-Vue.component("meuAside", meuAside);
-Vue.component("meuHeader", meuHeader);
-Vue.component("meuBody", meuBody);
+import { myAside, mayHeader, myBody, detailsShow, myInput, mySwitch, Example, } from 'plugin-b'
+Vue.component("myAside", myAside);
+Vue.component("myHeader", myHeader);
+Vue.component("myBody", myBody);
 Vue.component("detailsShow", detailsShow);
-Vue.component("meuInput", meuInput);
+Vue.component("myInput", myInput);
 Vue.component("mySwitch", mySwitch);
 Vue.component("Example", Example);
 

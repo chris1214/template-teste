@@ -1,12 +1,38 @@
 <script>
   export default {
-    props: ["src", "title"],
     data() {
       return {
-        img: 'http://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg',
-        img2: './logo.png',
-        isCollapse: true
+        img: '../assets/img/logo.png',
+        img2: 'logo.png',
+        img3: 'http://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg',
+        isCollapse: true,
       };
+    },
+    props: ["src", "title", "srcUser"],
+    watch: {
+      src: function (value) {
+        console.log("Value", value)
+      }
+    },
+    computed: {
+      _src: function () {
+       if(this.src != "" && this.src != null){
+           console.log("src")
+          return this.src
+        }else {
+          console.log("null")
+         return null
+        }
+      },
+      _srcImg3: function () {
+       if(this.img3 != "" && this.src != null){
+           console.log("img3")
+          return this.img3
+        }else {
+          console.log("null")
+         return null
+        }
+      }
     },
     methods: {
       handleOpen(key, keyPath) {
@@ -22,25 +48,23 @@
 
 </script>
 <template>
-  <div id="aside">
-
-
+  <div>
     <el-menu default-active="2" class="el-menu-vertical" @open="handleOpen" @close="handleClose" :collapse="isCollapse">
 
       <el-row>
         <el-col :span="22" class="min-width-175">
           <el-row>
             <el-col :span="5" class="container-brand-icon">
-              <img :src="img" class="brand-icon" @click="isCollapse = !isCollapse">
+              <img src="./logo.png" class="brand-icon" @click="isCollapse = !isCollapse">
             </el-col>
             <el-col :span="9" class="container-text">
-              <span class="textBrand" v-bind:class="{brandText: !isCollapse}">{{ title }}</span>
+              <span :class="textBrand" v-bind:class="{brandText: !isCollapse}">{{ title }}</span>
             </el-col>
           </el-row>
         </el-col>
       </el-row>
 
-      <div class="perfil" v-show="!isCollapse">
+      <div class="profile" v-show="!isCollapse">
         <el-row>
           <el-col :span="24" class="corpo-img">
             <img src="../assets/img/menina-camera.jpg" alt="Nifty Logo" class="class100 border-radius50"
@@ -148,19 +172,19 @@
 .transform-i {
   transform: rotate(90deg);
 }
-/*perfil */
-.perfil {
+/*profile */
+.profile {
   height: 210px;
   text-align: center;
 }
-.perfil div div.height-60px .mnp-name, .perfil div div.height-60px .mnp-desc{
+.profile div div.height-60px .mnp-name, .profile div div.height-60px .mnp-desc{
   color: black !important;
 }
 
-.el-menu--collapse > .perfil > div {
+.el-menu--collapse > .profile > div {
   padding: 0px !important;
 }
-/*perfil */
+/*profile */
 /*img menu lateral*/
 
 .corpo-img {
@@ -219,9 +243,6 @@
 .el-menu-vertical {
   min-height: 100%;
   height: 100%;
-}
-#aside {
-
 }
 .el-menu-vertical {
   position: fixed;
