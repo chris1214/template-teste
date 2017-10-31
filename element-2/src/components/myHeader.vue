@@ -12,9 +12,6 @@
 <template>
   <div>
     <el-header>
-
-
-
       <el-row>
         <slot name="menu1024"></slot>
 

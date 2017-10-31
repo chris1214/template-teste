@@ -33,16 +33,16 @@ export default{
 
 </script>
 <template>
-    <div class="container" :class="_padding15px">
+    <div class="container" :class="_backgroundColorWhite">
       <slot></slot>
     </div>
 </template>
 <style scoped>
 .my-background {
-  background-color: transparent !important;
+    background-color: transparent;
 }
 .my-padding {
-  padding: 0 !important;
+  padding: 0;
 }
 .container {
   margin-bottom: 15px;

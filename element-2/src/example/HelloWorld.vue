@@ -23,6 +23,7 @@
     data() {
       return {
         isCollapse: true,
+        value1: true,
         tableData: [{
             date: '2016-05-03',
             name: 'Tom',
@@ -108,14 +109,68 @@
 
     <el-main slot="main">
 
-      <myModuleTitle title="Eu sou um titulo">
+      <!-- <myModuleTitle title="Eu sou um titulo">
         <el-button>Default</el-button>
         <el-button size="medium">Medium</el-button>
         <el-button size="small">Small</el-button>
         <el-button size="mini">Mini</el-button>
+      </myModuleTitle> -->
+
+      <myModuleTitle title="Usúario">
       </myModuleTitle>
 
       <myContainer>
+        <el-row :gutter="20">
+          <el-col :span="8">
+            <label>Nome </label>
+            <el-input
+            />
+          </el-col>
+          <el-col :span="8">
+            <label>Nome de usuario</label>
+            <el-input
+            />
+          </el-col>
+
+          <el-col :span="8">
+            <label>Email</label>
+            <el-input
+            />
+          </el-col>
+        </el-row>
+
+        <el-row :gutter="20">
+          <el-col :span="8">
+            <label>Telefone </label>
+            <el-input
+            />
+          </el-col>
+          <el-col :span="8">
+            <label>Senha</label>
+            <el-input
+            />
+          </el-col>
+        </el-row>
+
+        <el-row :gutter="20">
+          <el-col :span="8">
+            <label>Habilitado </label>
+            <el-switch v-model="value1">
+            </el-switch>
+          </el-col>
+        </el-row>
+
+        <el-row :gutter="20">
+          <el-col :span="12">
+            <el-button-group>
+              <el-button size="medium" type="warning">pesquisar</el-button>
+              <el-button size="medium">Voltar para pesquisa</el-button>
+            </el-button-group>
+          </el-col>
+        </el-row>
+      </myContainer>
+
+      <!-- <myContainer>
         <el-collapse accordion>
           <el-collapse-item title="Filtros" name="1">
             <el-row :gutter="20">
@@ -140,7 +195,7 @@
         </el-collapse>
       </myContainer>
 
-      <myContainer>
+      <myContainer backgroundColorWhite="false">
         <el-table
           :data="tableData"
           style="width: 100%">
@@ -159,16 +214,18 @@
             label="Address">
           </el-table-column>
         </el-table>
-      </myContainer>
+      </myContainer> -->
 
     </el-main>
 
     <el-footer slot="footer">Footer</el-footer>
   </myBody>
 </template>
-<style>
+<style scoped>
 .padding-11{
   padding: 11px 0;
 }
-
+.el-row {
+  margin-bottom: 25px;
+}
 </style>

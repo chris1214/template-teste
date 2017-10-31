@@ -13,7 +13,7 @@ export default{
 
 </script>
 <template>
-  <myContainer>
+  <myContainer backgroundColorWhite="true">
     <el-row>
       <el-col :span="12">
         <h1>{{ title }}</h1>
