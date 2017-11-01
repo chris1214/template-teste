@@ -8,22 +8,22 @@ export default{
     computed: {
       _padding15px: function () {
         if(this.padding15px){
-          console.log('true');
-          return 'my-padding';
+          console.log('true padding');
+          return 'myPadding';
 
         } else {
-          console.log('false');
-          return '';
+          console.log('false padding');
+          return 'container';
         }
       },
       _backgroundColorWhite: function () {
         if(this.backgroundColorWhite){
-          console.log('true');
-          return 'my-background';
+          console.log('true background');
+          return 'myBackground';
 
         } else {
-          console.log('false');
-          return '';
+          console.log('false background');
+          return 'container';
         }
       }
     },
@@ -33,15 +33,15 @@ export default{
 
 </script>
 <template>
-    <div class="container" :class="_backgroundColorWhite">
+    <div class="container" :class="">
       <slot></slot>
     </div>
 </template>
 <style scoped>
-.my-background {
-    background-color: transparent;
+.myBackground {
+    background-color: transparent !important;
 }
-.my-padding {
+.myPadding {
   padding: 0;
 }
 .container {

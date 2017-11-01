@@ -1,7 +1,7 @@
 <script>
 import myContainer from './myContainer'
 export default{
-    props: ["title"],
+    props: ["title","backgroundColorWhite","padding15px"],
     data(){
         return{
         }
@@ -13,7 +13,7 @@ export default{
 
 </script>
 <template>
-  <myContainer backgroundColorWhite="true">
+  <myContainer backgroundColorWhite="backgroundColorWhite" padding15px="padding15px">
     <el-row>
       <el-col :span="12">
         <h1>{{ title }}</h1>
