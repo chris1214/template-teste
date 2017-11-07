@@ -46,6 +46,7 @@
 
 
 
+
 </script>
 <template>
   <div>
@@ -81,36 +82,36 @@
 
         <el-row>
           <el-col :span="24">
-                <el-tooltip class="item" effect="dark" content="Action 1" placement="top-start">
-                  <a href="#">
-                    <el-button type="text" icon="el-icon-edit" size="mini"></el-button>
-                  </a>
-                </el-tooltip>
-                <el-tooltip class="item" effect="dark" content="Action 2" placement="top-start">
-                  <a href="#">
-                    <el-button type="text" icon="el-icon-share" size="mini"></el-button>
-                  </a>
-                </el-tooltip>
-                <el-tooltip class="item" effect="dark" content="Action 3" placement="top-start">
-                  <a href="#">
-                    <el-button type="text" icon="el-icon-arrow-down" size="mini"></el-button>
-                  </a>
-                </el-tooltip>
-                <el-tooltip class="item" effect="dark" content="Action 5" placement="top-start">
-                  <a href="#">
-                    <el-button type="text" icon="el-icon-arrow-right" size="mini"></el-button>
-                  </a>
-                </el-tooltip>
-                <el-dropdown>
+            <el-tooltip class="item" effect="dark" content="Action 1" placement="top-start">
+              <a href="#">
+                <el-button type="text" icon="el-icon-edit" size="mini"></el-button>
+              </a>
+            </el-tooltip>
+            <el-tooltip class="item" effect="dark" content="Action 2" placement="top-start">
+              <a href="#">
+                <el-button type="text" icon="el-icon-share" size="mini"></el-button>
+              </a>
+            </el-tooltip>
+            <el-tooltip class="item" effect="dark" content="Action 3" placement="top-start">
+              <a href="#">
+                <el-button type="text" icon="el-icon-arrow-down" size="mini"></el-button>
+              </a>
+            </el-tooltip>
+            <el-tooltip class="item" effect="dark" content="Action 5" placement="top-start">
+              <a href="#">
+                <el-button type="text" icon="el-icon-arrow-right" size="mini"></el-button>
+              </a>
+            </el-tooltip>
+            <el-dropdown>
                     <span class="el-dropdown-link">
                       <el-button type="text" icon="el-icon-more" size="mini" class="transform-i"></el-button>
                     </span>
-                  <el-dropdown-menu slot="dropdown">
-                    <el-dropdown-item>Action 8</el-dropdown-item>
-                    <el-dropdown-item>Action 9</el-dropdown-item>
-                    <el-dropdown-item>Action 10</el-dropdown-item>
-                  </el-dropdown-menu>
-                </el-dropdown>
+              <el-dropdown-menu slot="dropdown">
+                <el-dropdown-item>Action 8</el-dropdown-item>
+                <el-dropdown-item>Action 9</el-dropdown-item>
+                <el-dropdown-item>Action 10</el-dropdown-item>
+              </el-dropdown-menu>
+            </el-dropdown>
           </el-col>
         </el-row>
       </div>
@@ -281,6 +282,7 @@
   transition: 0.1s;
   color: black;
 }
+
 
 
 

@@ -1,11 +1,25 @@
 <script>
 export default{
-    props: ["disablePadding", "disableCard"],
+    props: ["padding", "card"],
     data(){
         return{
         }
     },
     computed: {
+      myCard: function() {
+        if (this.card === false){
+            return true;
+        } else {
+          return false;
+        }
+      },
+      myPadding: function() {
+        if (this.padding === false){
+            return true;
+        } else {
+          return false;
+        }
+      }
     },
     components:{
     }
@@ -13,7 +27,7 @@ export default{
 
 </script>
 <template>
-    <div class="container" v-bind:class="{myBackground: disableCard, myPadding: disablePadding }">
+    <div class="container" v-bind:class="{myBackground: myCard, myPadding: myPadding }">
       <slot></slot>
     </div>
 </template>

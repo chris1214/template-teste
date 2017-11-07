@@ -1,10 +1,13 @@
 <script>
 import myContainer from './myContainer'
 export default{
-    props: ["title"],
+    props: ["title", "card", "padding" ],
     data(){
         return{
+
         }
+    },
+    computed: {
     },
     components:{
       myContainer,
@@ -13,7 +16,7 @@ export default{
 
 </script>
 <template>
-  <myContainer :disableCard="false" :disablePadding="false">
+  <myContainer :card="card" :padding="padding">
     <el-row>
       <el-col :span="12">
         <h1>{{ title }}</h1>

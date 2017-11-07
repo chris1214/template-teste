@@ -18,9 +18,9 @@ export default{
 </script>
 <template>
   <div>
-    <myModuleTitle title="Show Tabs"></myModuleTitle>
+    <myModuleTitle title="Show Tabs" :card="false"></myModuleTitle>
 
-    <myContainer :disableCard="false" :disablePadding="false">
+    <myContainer>
       <el-tabs v-model="activeName">
         <el-tab-pane label="Detalhes 1" name="first">
           <el-row>
