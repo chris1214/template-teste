@@ -58,7 +58,7 @@
               <img src="./logo.png" class="brand-icon" @click="isCollapse = !isCollapse">
             </el-col>
             <el-col :span="9" class="container-text">
-              <span :class="textBrand" v-bind:class="{brandText: !isCollapse}">{{ title }}</span>
+              <span v-bind:class="{brandText: !isCollapse}">{{ title }}</span>
             </el-col>
           </el-row>
         </el-col>

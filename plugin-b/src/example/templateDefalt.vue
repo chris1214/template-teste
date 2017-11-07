@@ -44,9 +44,9 @@ import meudialog from './body/dialog.vue'
 
         <!--<meuTabs />-->
 
-        <meucreat/>
+        <!--<meucreat/>-->
 
-        <!--<meushow />-->
+        <meushow />
 
         <!--<meudialog />-->
 

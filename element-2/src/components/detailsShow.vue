@@ -1,22 +1,55 @@
 <script>
-    export default{
-      props: ["label", "placeholder", "myClass", "containerClass"],
-        data: function(){
+export default{
+  props: ["label", "value", "format", "labelWidth"],
+  computed: {
+      _labelWidth: function() {
+        return "width: " + this.labelWidth + ';'
+      },
+      Format: function() {
+        if(this.format === '') {
+          return "showCollumGrid"
         }
+        if (this.format === 'collum'){
+          return "showCollumGrid"
+        }
+        if (this.format === 'inline'){
+          return "showInlineGrid"
+        } else {
+          return "showCollumGrid"
+        }
+      }
     }
-
-
+}
 </script>
 <template>
-  <span :class="containerClass">
-    <p :class="myClass">
-      {{ label }} &nbsp;
-    </p>
+  <span :class="Format">
+    <b :style="_labelWidth">
+      <slot name="label">{{ label }}</slot>
+    </b>
     <p>
-      {{ placeholder }}
+      <slot name="value">{{ value }}</slot>
     </p>
   </span>
 </template>
-<style>
+<style scoped>
+/* Form Show */
+p {
+  margin: 0;
+}
+/* label + valor em colunas */
+.showInlineGrid {
+  display: inline-flex;
+  min-width: 100%;
+
+}
+/* label + valor em colunas */
+
+/* label em cima, valor em baixo em colunas */
+.showCollumGrid {
+  min-height: 36px;
+}
+/* Form Show */
+
 
 </style>
+

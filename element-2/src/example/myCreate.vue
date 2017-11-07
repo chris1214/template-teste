@@ -1,5 +1,4 @@
 <script>
-  import myBody from "src/components/myBody"
   import myModuleTitle from "src/components/myModuleTitle"
   import myContainer from "src/components/myContainer"
 
@@ -9,11 +8,11 @@
           }
       },
       components:{
-        myBody,
         myModuleTitle,
         myContainer
       }
   }
+
 
 </script>
 <template>
@@ -24,7 +23,7 @@
 
     <myContainer backgroundColorWhite="false" padding15px="false">
 
-      <el-form :inline="true" label-width="120px" class="demo-ruleForm" label-position="top">
+      <el-form :inline="true" label-position="top">
         <el-form-item label="Nome">
           <el-input type="text"></el-input>
         </el-form-item>
@@ -56,12 +55,10 @@
 
         <el-row :gutter="20">
           <el-col :span="12">
-            <el-form-item style="vertical-align: bottom;">
-              <el-button-group>
-                <el-button size="medium" type="warning">pesquisar</el-button>
-                <el-button size="medium">Voltar para pesquisa</el-button>
-              </el-button-group>
-            </el-form-item>
+            <el-button-group>
+              <el-button size="mini" type="warning">Criar</el-button>
+              <el-button size="mini">Voltar para pesquisa</el-button>
+            </el-button-group>
           </el-col>
         </el-row>
       </el-form>

@@ -10,6 +10,8 @@
   import myModuleTitle from "src/components/myModuleTitle"
 
   import myExampleCreate from "./myCreate"
+  import myExTableSearch from "./myExTableSearch"
+  import myExShow from "./myExShow"
   export default {
   components: {
     myAside,
@@ -21,29 +23,13 @@
     myHeader,
     myModuleTitle,
     myBody,
-    myExampleCreate
+    myExampleCreate,
+    myExTableSearch,
+    myExShow
   },
     data() {
       return {
-        isCollapse: true,
-        value1: true,
-        tableData: [{
-            date: '2016-05-03',
-            name: 'Tom',
-            address: 'No. 189, Grove St, Los Angeles'
-          }, {
-            date: '2016-05-02',
-            name: 'Tom',
-            address: 'No. 189, Grove St, Los Angeles'
-          }, {
-            date: '2016-05-04',
-            name: 'Tom',
-            address: 'No. 189, Grove St, Los Angeles'
-          }, {
-            date: '2016-05-01',
-            name: 'Tom',
-            address: 'No. 189, Grove St, Los Angeles'
-          }]
+
       };
     },
     methods: {
@@ -55,6 +41,10 @@
       }
     }
   }
+
+
+
+
 
 </script>
 <template>
@@ -112,70 +102,15 @@
 
 
     <el-main slot="main">
-      <myExampleCreate></myExampleCreate>
-
-      <!-- <myModuleTitle title="Eu sou um titulo">
-        <el-button>Default</el-button>
-        <el-button size="medium">Medium</el-button>
-        <el-button size="small">Small</el-button>
-        <el-button size="mini">Mini</el-button>
-      </myModuleTitle> -->
-      <!-- <myContainer>
-        <el-collapse accordion>
-          <el-collapse-item title="Filtros" name="1">
-            <el-row :gutter="20">
-              <el-col :span="12">
-                <label>Nome </label>
-                <el-input
-                />
-              </el-col>
-              <el-col :span="12">
-                <label>Sobrenome</label>
-                <el-input
-                />
-              </el-col>
-            </el-row>
-
-            <el-row :gutter="20">
-              <el-col :span="12">
-                <el-button size="medium" type="warning">pesquisar</el-button>
-              </el-col>
-            </el-row>
-          </el-collapse-item>
-        </el-collapse>
-      </myContainer>
-
-      <myContainer backgroundColorWhite="false">
-        <el-table
-          :data="tableData"
-          style="width: 100%">
-          <el-table-column
-            prop="date"
-            label="Date"
-            width="180">
-          </el-table-column>
-          <el-table-column
-            prop="name"
-            label="Name"
-            width="180">
-          </el-table-column>
-          <el-table-column
-            prop="address"
-            label="Address">
-          </el-table-column>
-        </el-table>
-      </myContainer> -->
+      <!--<myExampleCreate />-->
+      <!--<myExTableSearch />-->
+      <myExShow />
 
     </el-main>
 
     <el-footer slot="footer">Footer</el-footer>
   </myBody>
 </template>
-<style scoped>
-.padding-11{
-  padding: 11px 0;
-}
-.el-row {
-  margin-bottom: 25px;
-}
+<style>
+
 </style>
