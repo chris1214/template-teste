@@ -4,7 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import Element2 from './Element2'
-
+import cssGlobal from './assets/css-global.css'
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

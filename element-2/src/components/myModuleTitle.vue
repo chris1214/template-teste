@@ -27,5 +27,8 @@ export default{
     </el-row>
   </myContainer>
 </template>
-<style>
+<style scoped>
+  .padding-11 {
+    padding: 11px;
+  }
 </style>

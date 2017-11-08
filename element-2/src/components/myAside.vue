@@ -166,7 +166,7 @@
 
   </div>
 </template>
-<style>
+<style scoped>
 #profileIcon .el-tooltip {
   padding: 0 5px;
 }
@@ -282,9 +282,4 @@
   transition: 0.1s;
   color: black;
 }
-
-
-
-
-
 </style>

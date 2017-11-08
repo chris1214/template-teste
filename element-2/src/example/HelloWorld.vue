@@ -3,10 +3,6 @@
   import myHeader from "src/components/myHeader"
   import myContainer from "src/components/myContainer"
   import myBody from "src/components/myBody"
-  import myTable from "./body/exampleTemplate/table"
-  import myFilter from "./body/exampleTemplate/filter"
-  import myCreat from "./body/creat"
-  import myTabs from "./body/tabs"
   import myModuleTitle from "src/components/myModuleTitle"
 
   import myExampleCreate from "./myCreate"
@@ -15,10 +11,6 @@
   export default {
   components: {
     myAside,
-    myTable,
-    myFilter,
-    myCreat,
-    myTabs,
     myContainer,
     myHeader,
     myModuleTitle,
@@ -52,7 +44,7 @@
     <myAside slot="aside" src="logo.png" title="Nifty"/>
 
     <myHeader slot="header">
-      <div slot="menu1024">
+      <div>
         <el-col :xs="12" :sm="12" :md="12" :lg="12">
           <el-menu mode="horizontal">
             <el-menu-item index="2">
@@ -102,15 +94,17 @@
 
 
     <el-main slot="main">
-      <!--<myExampleCreate />-->
+      <myExampleCreate />
       <!--<myExTableSearch />-->
-      <myExShow />
+      <!--<myExShow />-->
 
     </el-main>
 
     <el-footer slot="footer">Footer</el-footer>
   </myBody>
 </template>
-<style>
-
+<style scoped>
+.text-align-end {
+  text-align: end;
+}
 </style>

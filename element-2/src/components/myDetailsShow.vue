@@ -3,7 +3,7 @@ export default{
   props: ["label", "value", "format", "labelWidth"],
   computed: {
       _labelWidth: function() {
-        return "width: " + this.labelWidth + ';'
+        return "width: " + this.labelWidth + 'px;'
       },
       Format: function() {
         if(this.format === '') {

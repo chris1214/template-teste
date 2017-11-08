@@ -1,6 +1,6 @@
 <script>
     export default{
-      props: ["linkRight1", "linkRight2", "linkRight3", "linkLeft1", "linkLeft2", "linkLeft3"],
+      props: [],
         data(){
             return{
             }
@@ -13,23 +13,12 @@
   <div>
     <el-header>
       <el-row>
-        <slot name="menu1024"></slot>
-
+        <slot></slot>
       </el-row>
-
-      <el-row>
-        <slot name="menu1440"></slot>
-      </el-row>
-
-      <el-row>
-        <slot name="menu375"></slot>
-      </el-row>
-
-
     </el-header>
   </div>
 </template>
-<style>
+<style scoped>
   @media (min-width: 349px){
   .display-2 {
     display: none !important;
@@ -80,8 +69,5 @@
   max-width: 100%;
   z-index: 5;
   padding: 0 83px 0 150px;
-}
-.text-align-end {
-  text-align: end;
 }
 </style>

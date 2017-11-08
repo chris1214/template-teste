@@ -34,13 +34,13 @@
 </script>
 <template>
   <div>
-    <myModuleTitle title="Eu sou um titulo">
+    <myModuleTitle :card="false" title="Eu sou um titulo">
       <el-button>Default</el-button>
       <el-button size="medium">Medium</el-button>
       <el-button size="small">Small</el-button>
       <el-button size="mini">Mini</el-button>
     </myModuleTitle>
-    <myContainer :disableCard="true" :disablePadding="true">
+    <myContainer :card="false" :padding="false">
       <el-collapse>
         <el-collapse-item title="Filtros" name="1">
           <el-form :inline="true" label-position="top">
@@ -67,7 +67,7 @@
       </el-collapse>
     </myContainer>
 
-    <myContainer :disableCard="false" :disablePadding="true">
+    <myContainer :card="true" :padding="false">
       <el-table
         :data="tableData"
         style="width: 100%">

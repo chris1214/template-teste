@@ -7,6 +7,9 @@ export default{
     },
     computed: {
       myCard: function() {
+        if (this.card === ''){
+          return false;
+        }
         if (this.card === false){
             return true;
         } else {
@@ -14,6 +17,9 @@ export default{
         }
       },
       myPadding: function() {
+        if (this.padding === ''){
+          return false;
+        }
         if (this.padding === false){
             return true;
         } else {
