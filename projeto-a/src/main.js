@@ -8,21 +8,21 @@ import router from './router'
 // Vue.component("myComponent", myComponent);
 // Vue.component("myBotao", myBotao);
 
-import {asideElement2, myHeader} from 'element-2'
-Vue.component("asideElement2", asideElement2);
-Vue.component("myHeader", myHeader);
+import myComponetn from 'element-2'
+Vue.use(myComponetn)
 
-import { myAside, mayHeader, myBody, detailsShow, myInput, mySwitch, Example, } from 'plugin-b'
+/*import { myAside, mayHeader, myBody, detailsShow, myInput, mySwitch, Example, } from 'plugin-b'
 Vue.component("myAside", myAside);
 Vue.component("myHeader", myHeader);
 Vue.component("myBody", myBody);
 Vue.component("detailsShow", detailsShow);
 Vue.component("myInput", myInput);
 Vue.component("mySwitch", mySwitch);
-Vue.component("Example", Example);
+Vue.component("Example", Example);*/
 
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+
 Vue.use(ElementUI);
 
 Vue.config.productionTip = false
@@ -32,5 +32,5 @@ new Vue({
   el: '#app',
   router,
   template: '<App/>',
-  components: { App }
+  components: { App, }
 })

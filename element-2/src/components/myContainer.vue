@@ -1,11 +1,14 @@
 <script>
 export default{
-    props: ["padding", "card"],
+    props: ["padding", "card", "cardPosition"],
     data(){
         return{
         }
     },
     computed: {
+      _cardPosition: function() {
+        return "margin: " + this.cardPosition
+      },
       myCard: function() {
         if (this.card === ''){
           return false;
@@ -33,7 +36,7 @@ export default{
 
 </script>
 <template>
-    <div class="container" v-bind:class="{myBackground: myCard, myPadding: myPadding }">
+    <div class="container" v-bind:class="{myBackground: myCard, myPadding: myPadding }" :style="_cardPosition ">
       <slot></slot>
     </div>
 </template>

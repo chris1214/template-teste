@@ -1,20 +1,12 @@
 <script>
-  import myAside from "src/components/myAside"
-  import myHeader from "src/components/myHeader"
-  import myContainer from "src/components/myContainer"
-  import myBody from "src/components/myBody"
-  import myModuleTitle from "src/components/myModuleTitle"
+  import myLogin from 'src/components/myLogin'
 
   import myExampleCreate from "./myCreate"
   import myExTableSearch from "./myExTableSearch"
   import myExShow from "./myExShow"
   export default {
   components: {
-    myAside,
-    myContainer,
-    myHeader,
-    myModuleTitle,
-    myBody,
+    myLogin,
     myExampleCreate,
     myExTableSearch,
     myExShow
@@ -33,13 +25,9 @@
       }
     }
   }
-
-
-
-
-
 </script>
 <template>
+<!--
   <myBody>
     <myAside slot="aside" src="logo.png" title="Nifty"/>
 
@@ -94,14 +82,23 @@
 
 
     <el-main slot="main">
-      <myExampleCreate />
-      <!--<myExTableSearch />-->
-      <!--<myExShow />-->
+      <h1>h1</h1>
+      <h2>h2</h2>
+      <h3>h3</h3>
+      <h4>h4</h4>
+      <h5>h5</h5>
+      <h6>h6</h6>
+
+      &lt;!&ndash;<myExampleCreate />&ndash;&gt;
+      &lt;!&ndash;<myExTableSearch />&ndash;&gt;
+      &lt;!&ndash;<myExShow />&ndash;&gt;
 
     </el-main>
 
     <el-footer slot="footer">Footer</el-footer>
   </myBody>
+-->
+  <myLogin />
 </template>
 <style scoped>
 .text-align-end {
