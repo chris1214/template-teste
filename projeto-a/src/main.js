@@ -4,21 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
-// import pluginA from 'plugin-a'
-// Vue.component("myComponent", myComponent);
-// Vue.component("myBotao", myBotao);
-
 import myComponetn from 'element-2'
-Vue.use(myComponetn)
-
-/*import { myAside, mayHeader, myBody, detailsShow, myInput, mySwitch, Example, } from 'plugin-b'
-Vue.component("myAside", myAside);
-Vue.component("myHeader", myHeader);
-Vue.component("myBody", myBody);
-Vue.component("detailsShow", detailsShow);
-Vue.component("myInput", myInput);
-Vue.component("mySwitch", mySwitch);
-Vue.component("Example", Example);*/
 
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'

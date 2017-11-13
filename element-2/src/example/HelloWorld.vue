@@ -27,7 +27,6 @@
   }
 </script>
 <template>
-<!--
   <myBody>
     <myAside slot="aside" src="logo.png" title="Nifty"/>
 
@@ -89,16 +88,17 @@
       <h5>h5</h5>
       <h6>h6</h6>
 
-      &lt;!&ndash;<myExampleCreate />&ndash;&gt;
-      &lt;!&ndash;<myExTableSearch />&ndash;&gt;
-      &lt;!&ndash;<myExShow />&ndash;&gt;
+      <!--<myExampleCreate />-->
+      <!--<myExTableSearch />-->
+      <!--<myExShow />-->
 
     </el-main>
 
     <el-footer slot="footer">Footer</el-footer>
   </myBody>
--->
+<!--
   <myLogin />
+-->
 </template>
 <style scoped>
 .text-align-end {
