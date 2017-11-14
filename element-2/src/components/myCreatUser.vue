@@ -24,23 +24,28 @@ export default{
   <div>
     <el-container>
       <el-main>
-        <myContainer cardPosition="10% 30%;">
-          <h1>Login</h1>
+        <myContainer cardPosition="0 25%">
+          <h1>Creat</h1>
           <el-form>
+            <el-form-item label="Name">
+              <el-input></el-input>
+            </el-form-item>
             <el-form-item label="Email">
               <el-input></el-input>
             </el-form-item>
             <el-form-item label="Password">
-              <el-input></el-input>
+              <el-input type="password"></el-input>
+            </el-form-item>
+            <el-form-item label="Repeat the password">
+              <el-input type="password"></el-input>
             </el-form-item>
             <el-form-item>
               <el-row>
                 <el-col :span="12">
-                  <el-button type="primary">Login</el-button>
+                  <el-button type="primary">Save/Creat</el-button>
                 </el-col>
                 <el-col :span="12" style="text-align: right;">
-                  <el-button type="text"><a href="#/creat">Register</a></el-button>
-                  <el-button type="text"><a href="#/forgotPassword">forgot password</a></el-button>
+                  <el-button type="text"><a href="#/">Back to login</a></el-button>
                 </el-col>
               </el-row>
             </el-form-item>

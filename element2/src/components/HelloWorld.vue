@@ -1,35 +1,3 @@
-<script>
-  import myLogin from 'src/components/myLogin'
-  import myCreatUser from "src/components/myCreatUser"
-  import myForgotPassword from "src/components/myForgotPassword"
-
-  import myExampleCreate from "./myCreate"
-  import myExTableSearch from "./myExTableSearch"
-  import myExShow from "./myExShow"
-  export default {
-  components: {
-    myLogin,
-    myExampleCreate,
-    myExTableSearch,
-    myExShow,
-    myCreatUser,
-    myForgotPassword
-  },
-    data() {
-      return {
-
-      };
-    },
-    methods: {
-      handleOpen(key, keyPath) {
-        console.log(key, keyPath);
-      },
-      handleClose(key, keyPath) {
-        console.log(key, keyPath);
-      }
-    }
-  }
-</script>
 <template>
   <myBody>
     <myAside slot="aside" src="logo.png" title="Nifty"/>
@@ -85,14 +53,14 @@
 
 
     <el-main slot="main">
-      <!--<h1>h1</h1>
+      <h1>h1</h1>
       <h2>h2</h2>
       <h3>h3</h3>
       <h4>h4</h4>
       <h5>h5</h5>
-      <h6>h6</h6>-->
+      <h6>h6</h6>
 
-      <myExampleCreate />
+      <!--<myExampleCreate />-->
       <!--<myExTableSearch />-->
       <!--<myExShow />-->
 
@@ -100,10 +68,15 @@
 
     <el-footer slot="footer">Footer</el-footer>
   </myBody>
-  <!--<myLogin />-->
 </template>
-<style scoped>
-.text-align-end {
-  text-align: end;
+
+<script>
+export default {
+  data () {
+    return {
+    }
+  }
 }
-</style>
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
