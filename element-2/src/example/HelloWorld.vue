@@ -2,6 +2,7 @@
   import myLogin from 'src/components/myLogin'
   import myCreatUser from "src/components/myCreatUser"
   import myForgotPassword from "src/components/myForgotPassword"
+   import myProfile from "src/components/myProfile"
 
   import myExampleCreate from "./myCreate"
   import myExTableSearch from "./myExTableSearch"
@@ -13,7 +14,8 @@
     myExTableSearch,
     myExShow,
     myCreatUser,
-    myForgotPassword
+    myForgotPassword,
+    myProfile
   },
     data() {
       return {
@@ -92,7 +94,8 @@
       <h5>h5</h5>
       <h6>h6</h6>-->
 
-      <myExampleCreate />
+      <myProfile />
+      <!--<myExampleCreate />-->
       <!--<myExTableSearch />-->
       <!--<myExShow />-->
 
