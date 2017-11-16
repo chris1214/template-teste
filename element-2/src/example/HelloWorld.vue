@@ -1,21 +1,13 @@
 <script>
-  import myLogin from 'src/components/myLogin'
-  import myCreatUser from "src/components/myCreatUser"
-  import myForgotPassword from "src/components/myForgotPassword"
-   import myProfile from "src/components/myProfile"
 
   import myExampleCreate from "./myCreate"
   import myExTableSearch from "./myExTableSearch"
   import myExShow from "./myExShow"
   export default {
   components: {
-    myLogin,
     myExampleCreate,
     myExTableSearch,
     myExShow,
-    myCreatUser,
-    myForgotPassword,
-    myProfile
   },
     data() {
       return {
@@ -94,8 +86,8 @@
       <h5>h5</h5>
       <h6>h6</h6>-->
 
-      <myProfile />
-      <!--<myExampleCreate />-->
+      <!--<myProfile />-->
+      <myExampleCreate />
       <!--<myExTableSearch />-->
       <!--<myExShow />-->
 

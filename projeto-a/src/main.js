@@ -4,11 +4,8 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
-import {myAside, myHeader, myBody} from 'element-2'
-Vue.component("myAside", myAside);
-Vue.component("myHeader", myHeader);
-Vue.component("myBody", myBody);
-
+import myComponent from 'element-2/index.js'
+Vue.use(myComponent)
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 
@@ -21,5 +18,5 @@ new Vue({
   el: '#app',
   router,
   template: '<App/>',
-  components: { App, myAside, myHeader,  myBody}
+  components: { App },
 })
