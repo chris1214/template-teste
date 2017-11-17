@@ -1,7 +1,7 @@
 .myContainer {
   padding-left: 64px !important;
 }
-html, body, #app, .el-container, #app > div {
+html, body, #app, .el-container, #app > div, body > div{
   min-height: 100% !important;
   max-height: 100% !important;
   height: 100% !important;

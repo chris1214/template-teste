@@ -4,7 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
-import myComponent from 'element-2/index.js'
+import {myComponent} from 'element-2/index.js'
 Vue.use(myComponent)
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'

@@ -1,3 +1,23 @@
+<script>
+  export default {
+  components: {
+  },
+    data() {
+      return {
+
+      };
+    },
+    methods: {
+      handleOpen(key, keyPath) {
+        console.log(key, keyPath);
+      },
+      handleClose(key, keyPath) {
+        console.log(key, keyPath);
+      }
+    }
+  }
+</script>
+
 <template>
   <myBody>
     <myAside slot="aside" src="logo.png" title="Nifty"/>
@@ -69,14 +89,8 @@
     <el-footer slot="footer">Footer</el-footer>
   </myBody>
 </template>
-
-<script>
-export default {
-  data () {
-    return {
-    }
-  }
+<style scoped>
+.text-align-end {
+  text-align: end;
 }
-</script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+</style>
