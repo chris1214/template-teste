@@ -1,17 +1,10 @@
 <script>
-
-  import myExampleCreate from "./myCreate"
-  import myExTableSearch from "./myExTableSearch"
-  import myExShow from "./myExShow"
   export default {
   components: {
-    myExampleCreate,
-    myExTableSearch,
-    myExShow,
   },
     data() {
       return {
-
+        fullscreen: false
       };
     },
     methods: {
@@ -20,6 +13,9 @@
       },
       handleClose(key, keyPath) {
         console.log(key, keyPath);
+      },
+      toggle () {
+        this.fullscreen = !this.fullscreen
       }
     }
   }
@@ -79,17 +75,23 @@
 
 
     <el-main slot="main">
-      <h1>h1</h1>
+      <!--<h1>h1</h1>
       <h2>h2</h2>
       <h3>h3</h3>
       <h4>h4</h4>
       <h5>h5</h5>
-      <h6>h6</h6>
+      <h6>h6</h6>-->
 
-      <!--<myProfile />-->
-      <!--<myExampleCreate />-->
-      <!--<myExTableSearch />-->
-      <!--<myExShow />-->
+      <myDetailsShow />
+      <fullscreen :fullscreen.sync="fullscreen">
+
+        <myExCreate />
+
+      </fullscreen>
+      <button type="button" @click="toggle" >Fullscreen</button>
+
+      <myExTableSearch />
+      <myExShow />
 
     </el-main>
 

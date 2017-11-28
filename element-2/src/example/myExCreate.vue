@@ -1,9 +1,4 @@
 <script>
-  import myModuleTitle from "src/components/myModuleTitle"
-  import myContainer from "src/components/myContainer"
-
-  import myActionsButton from "src/components/myActionsButton"
-
   export default{
       data(){
           return{
@@ -12,17 +7,14 @@
           }
       },
       components:{
-        myModuleTitle,
-        myContainer,
-        myActionsButton
       }
   }
 </script>
 <template>
   <div>
 
-    <myModuleTitle title="Usúario" :card="false">
-    </myModuleTitle>
+    <!--<myModuleTitle title="Usúario" :card="false">
+    </myModuleTitle>-->
 
     <myContainer>
       <el-tabs v-model="activeName" type="card">

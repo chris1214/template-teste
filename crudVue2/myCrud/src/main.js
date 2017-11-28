@@ -3,11 +3,19 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import {myComponent } from '../index'
+
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+Vue.use(ElementUI)
+
+import VueResource from 'vue-resource'
+
+Vue.use(VueResource)
+
+import {myComponent} from 'element-2'
 Vue.use(myComponent)
+
 Vue.config.productionTip = false
-import fullscreen from 'vue-fullscreen'
-Vue.use(fullscreen)
 
 /* eslint-disable no-new */
 new Vue({

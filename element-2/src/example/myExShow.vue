@@ -1,9 +1,4 @@
 <script>
-import myModuleTitle from "src/components/myModuleTitle"
-import myContainer from "src/components/myContainer"
-
-import myDetailsShow from "src/components/myDetailsShow"
-import myActionsButton from "src/components/myActionsButton"
 export default{
     data(){
         return{
@@ -11,10 +6,6 @@ export default{
         }
     },
     components:{
-      myModuleTitle,
-      myContainer,
-      myDetailsShow,
-      myActionsButton
     },
 }
 

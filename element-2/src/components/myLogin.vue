@@ -1,6 +1,4 @@
 <script>
-import myContainer from './myContainer'
-import myActionsButton from './myActionsButton'
 export default{
   data() {
     return {
@@ -13,8 +11,6 @@ export default{
     }
   },
     components:{
-      myContainer,
-      myActionsButton,
     }
 }
 

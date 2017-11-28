@@ -1,7 +1,4 @@
 <script>
-  import myModuleTitle from "src/components/myModuleTitle"
-  import myContainer from "src/components/myContainer"
-
     export default{
         data(){
             return{
@@ -27,8 +24,6 @@
             }
         },
         components:{
-          myModuleTitle,
-          myContainer
         }
     }
 </script>
@@ -72,7 +67,7 @@
         :data="tableData"
         style="width: 100%">
         <el-table-column
-          prop="date"
+          prop="z"
           label="Date"
           width="180">
         </el-table-column>

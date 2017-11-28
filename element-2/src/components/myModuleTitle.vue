@@ -1,5 +1,4 @@
 <script>
-import myContainer from './myContainer'
 export default{
     props: ["title", "card", "padding" ],
     data(){
@@ -10,7 +9,6 @@ export default{
     computed: {
     },
     components:{
-      myContainer,
     }
 }
 
