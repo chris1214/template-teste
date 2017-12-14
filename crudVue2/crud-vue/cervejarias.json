@@ -2,7 +2,7 @@
   "breweries": [
     {
       "id": 1,
-      "name": "bla",
+      "name": "(512) Brewing Company",
       "address1": "407 Radam, F200",
       "address2": "",
       "city": "Austin",
@@ -2239,43 +2239,6 @@
         "longitude": -90.5171,
         "accuracy": "RANGE_INTERPOLATED"
       }
-    },
-    {
-      "name": "Novo",
-      "code": "04",
-      "descript": "teste",
-      "id": 103
-    },
-    {
-      "name": "Novo",
-      "code": "04",
-      "descript": "teste",
-      "id": 104
-    },
-    {
-      "name": "new",
-      "code": "123",
-      "descript": "eueueueueue",
-      "website": "",
-      "id": 105
-    },
-    {
-      "name": "asd",
-      "code": "asd",
-      "descript": "asd",
-      "id": 106
-    },
-    {
-      "name": "asd",
-      "code": "asd",
-      "descript": "asd",
-      "id": 107
-    },
-    {
-      "name": "asd",
-      "code": "asd",
-      "descript": "asd",
-      "id": 108
     }
   ],
   "beers": [
